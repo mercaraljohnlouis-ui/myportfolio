@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>John Louis Mercaral | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{--page:#c9b9aa;--frame:#fff;--cream:#fbf6f1;--card:#fcf8f4;--ink:#161616;--muted:#6b625b;--line:#eee3da;--or1:#ff5a36;--or2:#ff9457;--tint:#fde6dc;
+--sans:"Inter",system-ui,Arial,sans-serif;--serif:"Instrument Serif",Georgia,serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--page:#2b2521;--frame:#1b1815;--cream:#221e1a;--card:#2a2520;--ink:#f4ede6;--muted:#b3a89d;--line:#3a332d;--tint:#3d2a22;color-scheme:dark}}
+:root[data-theme="dark"]{--page:#2b2521;--frame:#1b1815;--cream:#221e1a;--card:#2a2520;--ink:#f4ede6;--muted:#b3a89d;--line:#3a332d;--tint:#3d2a22;color-scheme:dark}
+*,*:before,*:after{box-sizing:inherit}
+body{margin:0;background:var(--page);color:var(--ink);font:15px/1.6 var(--sans);padding:18px}
+a{color:inherit}
+a:focus-visible{outline:3px solid var(--or1);outline-offset:3px}
+.frame{max-width:1100px;margin:0 auto;background:var(--frame);border-radius:22px;overflow:hidden;box-shadow:0 0 0 6px color-mix(in srgb,var(--frame) 55%,transparent)}
+em{font-family:var(--serif);font-style:italic;font-weight:400}
+h1,h2,h3{margin:0;font-weight:500;letter-spacing:-.02em;line-height:1.1}
+h2{font-size:clamp(30px,5vw,44px)}
+h2 em,h1 em{font-size:1.08em}
+.pill{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:600;padding:5px 12px;border-radius:999px}
+.label{font-size:11px;font-weight:600;color:var(--muted);margin-bottom:14px;display:block}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:11px 20px;border-radius:999px;font-weight:600;font-size:14px;text-decoration:none;background:#fff;color:#161616}
+.btn.or{background:var(--or1);color:#fff}
+/* hero */
+.hero{background:linear-gradient(135deg,var(--or1) 0%,var(--or2) 100%);color:#fff;padding:22px 28px 56px;position:relative;overflow:hidden;min-height:560px}
+nav{display:flex;justify-content:space-between;align-items:center;gap:12px;position:relative;z-index:2}
+.menu{display:flex;align-items:center;gap:22px;background:#fff;color:#161616;border-radius:999px;padding:9px 20px;font-size:13px;flex-wrap:wrap}
+.menu b{font-size:15px;margin-right:6px}
+.menu a{text-decoration:none;color:#555}
+.menu a:hover{color:#161616}
+.visit{display:flex;align-items:center;gap:10px;background:#fff;color:#161616;border-radius:999px;padding:6px 6px 6px 18px;font-size:13px;font-weight:600;text-decoration:none}
+.av{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--or1),var(--or2));color:#fff;display:grid;place-items:center;font-size:12px;font-weight:700}
+.hero-in{display:grid;gap:30px;margin-top:64px;position:relative;z-index:2}
+@media(min-width:820px){.hero-in{grid-template-columns:1.1fr 1fr}}
+.hero .pill{background:rgba(255,255,255,.22);margin-bottom:18px}
+.hero h1{font-size:clamp(38px,7vw,62px)}
+.hero p{max-width:30em;color:rgba(255,255,255,.88);margin:16px 0 24px}
+.hero .row{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+.hero .row a.l{font-size:13px;font-weight:600;text-decoration:none}
+.proof{margin-top:44px;display:flex;gap:14px;align-items:center;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.35);border-radius:14px;padding:12px;max-width:340px}
+.proof b{font-size:34px;font-weight:600;line-height:1}
+.proof span{font-size:12px;line-height:1.4;color:rgba(255,255,255,.92)}
+.mono{position:absolute;right:-20px;bottom:-60px;font:italic 400 clamp(220px,38vw,420px)/1 var(--serif);color:rgba(255,255,255,.17);pointer-events:none;z-index:1}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:60px}
+.chips span{background:#fff;color:#161616;font-size:11px;font-weight:600;padding:5px 12px;border-radius:6px}
+.side{text-align:center;align-self:end}
+.side h3{font-size:15px;font-weight:600;margin:16px 0 6px}
+.side p{font-size:12px;margin:0 auto;color:rgba(255,255,255,.8)}
+/* sections */
+section{padding:72px 28px}
+.cream{background:var(--cream)}
+.center{text-align:center}
+.center p{max-width:34em;margin:16px auto 0;color:var(--muted)}
+.contact-l{margin-top:22px;font-size:14px;font-weight:600;line-height:1.8}
+.contact-l a{text-decoration:none}
+.cards{display:grid;gap:14px;margin-top:40px}
+@media(min-width:760px){.cards{grid-template-columns:repeat(3,1fr)}}
+.c{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+.ic{width:34px;height:34px;border-radius:8px;background:var(--tint);color:var(--or1);display:grid;place-items:center;font-size:15px;margin-bottom:46px}
+.c h3{font-size:16px;font-weight:600;margin-bottom:6px}
+.c p{margin:0;font-size:13px;color:var(--muted)}
+/* project */
+.proj{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:30px;margin-top:40px;display:grid;gap:30px;text-align:left}
+@media(min-width:820px){.proj{grid-template-columns:.9fr 1.3fr}}
+.big{background:linear-gradient(160deg,var(--tint),var(--or1) 160%);border-radius:14px;padding:26px;display:flex;flex-direction:column;justify-content:flex-end;gap:22px;min-height:260px;color:#161616}
+.big b{display:block;font-size:56px;font-weight:600;line-height:1;letter-spacing:-.03em}
+.big span{font-size:13px}
+.proj dl{margin:0;display:grid;gap:16px}
+.proj dt{font-size:12px;font-weight:600;color:var(--or1)}
+.proj dd{margin:2px 0 0;color:var(--muted)}
+.tags{display:flex;gap:8px;flex-wrap:wrap;list-style:none;margin:6px 0 0;padding:0}
+.tags li{font-size:12px;font-weight:600;padding:4px 12px;border-radius:6px;background:var(--tint);color:var(--ink)}
+/* goals */
+.team{display:grid;gap:14px;margin-top:40px}
+@media(min-width:760px){.team{grid-template-columns:repeat(3,1fr)}}
+.t{border-radius:14px;min-height:340px;background:linear-gradient(180deg,var(--tint) 30%,var(--or1) 175%);position:relative;display:flex;flex-direction:column;justify-content:flex-end;padding:22px;color:#fff;overflow:hidden}
+.t i{position:absolute;top:8px;left:18px;font:italic 400 120px/1 var(--serif);color:rgba(255,90,54,.35)}
+.t h3{font-size:20px;font-weight:600;position:relative}
+.t span{font-size:12px;opacity:.9;position:relative}
+/* skills */
+.sk{display:grid;gap:30px;margin-top:36px;align-items:start}
+@media(min-width:820px){.sk{grid-template-columns:1fr 1fr}}
+.panel{border-radius:14px;min-height:300px;background:linear-gradient(180deg,var(--tint),var(--or1) 170%);padding:24px;display:flex;align-items:flex-end;color:#fff;font-size:15px;font-weight:600;line-height:1.4}
+.list h3{font-size:14px;font-weight:600;color:var(--muted);margin:0 0 10px}
+.list ol{list-style:none;margin:0 0 30px;padding:0}
+.list li{font-size:20px;font-weight:500;padding:12px 0;border-bottom:1px solid var(--line)}
+.list li small{font-size:12px;font-weight:600;color:var(--or1);margin-right:10px}
+.cta{background:linear-gradient(180deg,var(--tint),var(--cream));border-radius:18px;padding:60px 24px;margin:0 28px}
+.cta .pill{background:var(--tint);color:var(--or1);margin-bottom:16px}
+.cta .btn{margin-top:26px}
+footer{background:var(--cream);margin-top:72px;padding:50px 28px;display:grid;gap:28px;font-size:13px;color:var(--muted)}
+@media(min-width:760px){footer{grid-template-columns:1fr 1.3fr 1fr}}
+footer b{display:block;color:var(--ink);font-size:15px;margin-bottom:10px}
+footer a{display:block;text-decoration:none;margin-bottom:4px}
+footer .mid{text-align:center}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="frame">
+<header class="hero">
+<nav aria-label="Sections">
+<div class="menu"><b>JL.</b><a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div>
+<a class="visit" href="mailto:jlmercaral@cmdi.edu.ph">Hire me <span class="av">JL</span></a>
+</nav>
+<div class="hero-in">
+<div>
+<span class="pill">● Information systems student</span>
+<h1>Building Systems That <em>Save Time</em></h1>
+<p>I’m John Louis Mercaral, a 2nd year BSIS student at CMDI Tagum. I turn real problems into practical, well-designed systems.</p>
+<div class="row"><a class="btn" href="#projects">View projects →</a><a class="l" href="#skills">See skills →</a></div>
+<div class="proof"><b>34%</b><span>less time on attendance for CMDI instructors, with a 4.5 user acceptance result.</span></div>
+</div>
+<div class="side">
+<div class="chips"><span>Web development</span><span>Data analysis</span><span>Databases</span><span>UI design</span><span>Systems analysis</span></div>
+<h3>Student developer and analyst</h3>
+<p>From requirements to deployment, I work through every stage of a system.</p>
+</div>
+</div>
+<div class="mono" aria-hidden="true">JL</div>
+</header>
+
+<section id="about" class="cream center">
+<span class="label">About me</span>
+<h2>Your problems deserve<br><em>thoughtful systems.</em></h2>
+<p>I’m a 2nd year Bachelor of Science in Information Systems student at CMDI Tagum. I’m interested in web development, data analysis, databases, UI design, and systems analysis, and I’m aiming for a career in business analysis, web development, or systems administration.</p>
+<div class="contact-l"><a href="mailto:jlmercaral@cmdi.edu.ph">jlmercaral@cmdi.edu.ph</a><br><a href="tel:09123456789">09123456789</a></div>
+</section>
+
+<section id="interests" class="center">
+<span class="label">Interests</span>
+<h2>What I Focus On,<br><em>Every Project.</em></h2>
+<div class="cards" style="text-align:left">
+<div class="c"><div class="ic">◐</div><h3>Web development</h3><p>Building responsive, working websites and applications.</p></div>
+<div class="c"><div class="ic">▦</div><h3>Data analysis</h3><p>Turning data into answers people can act on.</p></div>
+<div class="c"><div class="ic">▤</div><h3>Databases</h3><p>Designing and querying data that stays organized.</p></div>
+<div class="c"><div class="ic">✦</div><h3>UI design</h3><p>Interfaces that are clear and easy to use.</p></div>
+<div class="c"><div class="ic">◇</div><h3>Systems analysis</h3><p>Understanding what users need before building.</p></div>
+</div>
+</section>
+
+<section id="projects" class="cream center">
+<span class="label">Projects</span>
+<h2>Evidence of <em>My Work.</em></h2>
+<div class="proj">
+<div class="big"><div><b>34%</b><span>reduction in time spent on attendance</span></div><div><b>4.5</b><span>user acceptance result</span></div></div>
+<dl>
+<div><h3 style="font-size:24px">Faculty attendance system</h3></div>
+<div><dt>The problem</dt><dd>Instructors at CMDI were spending too much of their limited class time completing attendance.</dd></div>
+<div><dt>My role</dt><dd>Developer, start to finish. I gathered requirements from the faculty, planned the system, designed the interface, developed it, and deployed it.</dd></div>
+<div><dt>Tools</dt><dd><ul class="tags"><li>Laravel</li><li>PHP</li><li>SQL</li><li>HTML</li><li>CSS</li></ul></dd></div>
+<div><dt>Lesson learned</dt><dd>The framework you choose shapes the rest of development. In future projects I’ll spend more time reviewing and evaluating the framework before committing to it, starting from the very beginning.</dd></div>
+</dl>
+</div>
+</section>
+
+<section class="center">
+<span class="label">Career goals</span>
+<h2>Where I’m <em>Heading.</em></h2>
+<div class="team">
+<div class="t"><i>“</i><h3>Business analyst</h3><span>Bridging people and systems</span></div>
+<div class="t"><i>“</i><h3>Web developer</h3><span>Building for the web</span></div>
+<div class="t"><i>“</i><h3>Systems administrator</h3><span>Keeping systems running</span></div>
+</div>
+</section>
+
+<section id="skills" class="cream">
+<span class="label">Skills and tools</span>
+<h2>Tools I Use, <em>Tools I’m Learning.</em></h2>
+<div class="sk">
+<div class="panel">Comfortable today. Curious about what’s next.</div>
+<div class="list">
+<h3>Comfortable using</h3>
+<ol><li><small>01</small>Laravel</li><li><small>02</small>HTML</li><li><small>03</small>CSS</li><li><small>04</small>JavaScript</li></ol>
+<h3>Currently learning</h3>
+<ol><li><small>05</small>Data mining</li><li><small>06</small>Analytics</li><li><small>07</small>Machine learning</li><li><small>08</small>Kubernetes</li></ol>
+</div>
+</div>
+</section>
+
+<div class="cta center" id="contact">
+<span class="pill">● Open to opportunities</span>
+<h2>Let’s Build<br><em>Something Useful.</em></h2>
+<p>Have a project, internship, or idea? Send me a message.</p>
+<a class="btn or" href="mailto:jlmercaral@cmdi.edu.ph">Email me →</a>
+</div>
+
+<footer>
+<div><b>Navigation</b><a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a></div>
+<div class="mid"><b>John Louis Mercaral</b>2nd year BSIS student at CMDI Tagum.<br>© 2026 John Louis Mercaral</div>
+<div><b>Contact</b><a href="tel:09123456789">09123456789</a><a href="mailto:jlmercaral@cmdi.edu.ph">jlmercaral@cmdi.edu.ph</a></div>
+</footer>
+</div>
+</body>
+</html>
